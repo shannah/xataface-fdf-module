@@ -1,5 +1,18 @@
 #Xataface FDF Module
 
+##Contents
+
+1. [Synopsis](#synopsis)
+2. [License](#license)
+3. [Requirements](#requirements)
+4. [Installation Using Git](#installation-using-git)
+5. [Installation from release](#installation-from-release)
+6. [Hosting a PDF Form](#hosting-a-pdf-form)
+7. [Mapping Content to PDF Fields](#mapping-content-to-pdf-fields)
+8. [FDF Report GET Parameters](#get-parameters)
+9. [Adding Reports to the UI](#adding-reports-to-ui)
+   1. [Example Adding Custom Action](#example-adding-custom-action)
+
 ##Synopsis
 
 The Xataface FDF module allows developers to design PDF forms using standard tools like Open Office and Adobe Acrobat, and use them as the basis for templates that will be filled in at runtime.  This is handy if you want to generate forms in some standard format, and prefill the fields with data-from your database.
@@ -10,8 +23,8 @@ Apache 2.0
 
 ##Requirements
 
-1. Xataface 2.0 or higher
-2. PDFTK installed on the server.
+1. [Xataface](http://xataface.com) 2.0 or higher
+2. [PDFTK](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) installed on the server.
 
 ##Installation using Git
 
@@ -162,6 +175,7 @@ The FDF module also allows you to implement a the `fdf_fill_fields()` delegate c
     }
 ~~~
 
+<a name="get-parameters"/>
 
 ##`fdf_report` GET Parameters
 
@@ -173,6 +187,8 @@ The `fdf_report` action takes a few special GET parameters to configure how it p
 |---|---|---|---|---|
 | `--pdf-template` | The name of the PDF file that should be used as the template.  This PDF file must be located in the `fdf_templates` directory. | Yes | `null` | 0.1 |
 | `--single` | A flag to indicate that only a single PDF should be generated.  If you set this to a truthy value, then the action will output the PDF directly to the browser.  If not, it will output a zip file containing all generated PDFs from the specified found set.  | `0` | 0.1 |
+
+<a name="adding-reports-to-ui"></a>
 
 ##Adding Reports to the UI
 
