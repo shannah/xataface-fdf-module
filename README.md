@@ -186,7 +186,7 @@ The `fdf_report` action takes a few special GET parameters to configure how it p
 | Parameter Name | Description | Required | Default | Since |
 |---|---|---|---|---|
 | `--pdf-template` | The name of the PDF file that should be used as the template.  This PDF file must be located in the `fdf_templates` directory. | Yes | `null` | 0.1 |
-| `--single` | A flag to indicate that only a single PDF should be generated.  If you set this to a truthy value, then the action will output the PDF directly to the browser.  If not, it will output a zip file containing all generated PDFs from the specified found set.  | `0` | 0.1 |
+| `--single` | A flag to indicate that only a single PDF should be generated.  If you set this to a truthy value, then the action will output the PDF directly to the browser.  If not, it will output a zip file containing all generated PDFs from the specified found set. | No | `0` | 0.1 |
 
 <a name="adding-reports-to-ui"></a>
 
