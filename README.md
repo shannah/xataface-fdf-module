@@ -222,3 +222,15 @@ Here is an example of a custom action that is set up to appear along with the re
 
 The use of `$record->getURL()` allows us to generate the appropriate URL for the current record, rather than making the action go to the same record every time.  You could also achieve similar using the `$app->url()` method.
 
+##Credits
+
+* The Xataface FDF Module was developed and is maintained by [Steve Hannah](http://sjhannah.com).
+
+##Support
+
+Post questions to the [Xataface Forum](http://www.xataface.com/forum)
+
+##See Also
+
+* [Xataface](http://xataface.com) - An open source framework for building data-driven applications with PHP.
+
