@@ -10,7 +10,7 @@ This tutorial describes how to create a PDF forms using Open Office, then have t
 
 ##Overview
 
-The following is a fairly typical use-case for a database application in the context of a University.  I have an application that helps manage teaching assistant job postings, applications, and appointments.  After selecting a "winning" candidate, the administrator needs to generate the contract.  The university provides these contact forms as an Excel file.  Some departments use the excel file directly to fill in the data for each appointment, but this is a waste of resources, since all of the information required for the contract is already in the database.
+The following is a fairly typical use-case for a database application in the context of a university.  I have an application that helps manage teaching assistant job postings, applications, and appointments.  After selecting a "winning" candidate, the administrator needs to generate the contract.  The university provides these contact forms as an Excel file.  Some departments use the excel file directly to fill in the data for each appointment, but this is a waste of resources, since all of the information required for the contract is already in the database.
 
 ###The Existing Application
 
@@ -20,7 +20,7 @@ The existing application is built with Xataface.  The relevant portion of the da
 2. `contacts` - The contact that is being offered the contract.
 3. `positions` - The specific teaching positions to be filled by the appointment.
 
-The EER for this portion looks like:
+The EER diagram for this portion looks like:
 
 ![Appoinments EER diagram](images/appointments-eer.png)
 
@@ -62,7 +62,7 @@ This should open up a "Properties" dialog as shown below:
 
 ![control properties dialog](images/control-properties-dialog.png)
 
-Enter "contact.last_name" into the "Name" field, and delete the existing content from the "Label" field so that it is blank.
+Enter "last_name" into the "Name" field, and delete the existing content from the "Label" field so that it is blank.
 
 > By naming the field `last_name`, it should be recognized as the `last_name` field of the context record (which will be a record from our appointments table).
 
