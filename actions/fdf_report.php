@@ -20,7 +20,6 @@ FDF;
         $app = Dataface_Application::getInstance();
         $app->_conf['nocache'] = 1;
         $query = $app->getQuery();
-        print_r($query);
         $table = $query['-table'];
         if ( !isset($query['--pdf-template']) ){
             throw new Exception("--pdf-template is a required field.");
@@ -38,6 +37,9 @@ FDF;
         $fdf_path = $fdf_dir_path.'/'.basename($fdf_filename);
         
         $pdftk_path = '/usr/bin/pdftk';
+        if ( isset($app->_conf['modules_fdf']) and isset($app->_conf['modules_fdf']['pdftk_path']) ){
+            $pdftk_path = $app->_conf['modules_fdf']['pdftk_path'];
+        }
         
         if ( !file_exists($fdf_path) or filemtime($fdf_path) < filemtime($template_path) ){
             exec(escapeshellarg($pdftk_path).' '.escapeshellarg($template_path).' generate_fdf output '.escapeshellarg($fdf_path));
@@ -118,11 +120,11 @@ FDF;
     
     function create_fdf($path, $vals){
         $fields = '';
-        
+        $app = Dataface_Application::getInstance();
         foreach ($vals as $key=>$value) {
             // Create UTF-16BE string encode as ASCII hex
             // See http://blog.tremily.us/posts/PDF_forms/
-            $utf16Value = mb_convert_encoding($value,'UTF-16BE', $encoding);
+            $utf16Value = mb_convert_encoding($value,'UTF-16BE', $app->_conf['ie']);
             // Escape parenthesis
             $utf16Value = strtr($utf16Value, array('(' => '\\(', ')'=>'\\)'));
             $fields .= "<</T($key)/V(".chr(0xFE).chr(0xFF).$utf16Value.")>>\n";

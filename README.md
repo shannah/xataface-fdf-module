@@ -89,6 +89,15 @@ E.g. Your modules section will look something like:
 
 Reload your application in the web browser and make sure there are no errors.  At this point the module is active, but it isn't being used for anything yet.
 
+##Configuring PDFTK path
+
+The default path where this module will look for `pdftk` is `/usr/bin/pdftk`.  You can override this by adding the following to your `conf.ini` file:
+
+~~~
+[modules_fdf]
+    pdftk_path="/usr/local/bin/pdftk"
+~~~
+
 ##Hosting a PDF Form
 
 This section assumes that you already have a PDF form that you wish to use as a template.  This PDF should have some form fields that are named so that Xataface can reference them and fill them in with appropriate data.  For more information about creating PDF forms, see here.  TODO: ADD section on creating PDF forms.
