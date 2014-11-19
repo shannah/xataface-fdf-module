@@ -66,7 +66,7 @@ Suppose you want to add this module to your application which is located at `/va
  $ cd /var/www/myapp
  $ mkdir modules
  ~~~
-2. Download the [latest release](..) tar or zip file and extract it inside your `modules` directory.
+2. Download the [latest release](https://github.com/shannah/xataface-fdf-module/releases) tar or zip file and extract it inside your `modules` directory.
 3. Rename the `xataface-fdf-module` directory to `fdf`.
 
 
@@ -192,7 +192,7 @@ The `fdf_report` action takes a few special GET parameters to configure how it p
 
 ##Adding Reports to the UI
 
-Obviously you won't want your users having to craft a URL to get their reports.  You will probably want to add links or buttons somewhere in the user interface of the app so that users can just click and see their filled PDF.  The preferred way to do this is using [actions](Actions.md#hello-world-action), but you could just as well add links in your UI in any way you choose (e.g. blocks, slots, template customization, etc..).
+Obviously you won't want your users having to craft a URL to get their reports.  You will probably want to add links or buttons somewhere in the user interface of the app so that users can just click and see their filled PDF.  The preferred way to do this is using [actions](https://github.com/shannah/xataface/blob/master/docs/Actions.md#hello-world-action), but you could just as well add links in your UI in any way you choose (e.g. blocks, slots, template customization, etc..).
 
 ###Example Adding Custom Action
 
