@@ -73,10 +73,13 @@ Before going any further, let's test out our form inside our application so that
 > Make sure you have [installed the FDF module](../README.md#installation-using-git) before proceeding to the next step.
 
 1. Save the spreadsheet as an Open Document Spreadsheet.  Select *File* > "Save As...", and select ".ods" as the output format.  We'll name the file "TSSU_APPLICATION_FORM.ods":
+  
   ![Save As](images/save-as.png)
 2. Select "File" > "Export as PDF" from the top menu:
+  
   ![Export as PDF](images/export-as-pdf-menu.png)
 3. The first dialog that displays will allow you to select some options for the output PDF.  You should be able to leave these options as their default, but do a quick check to make sure that "Create PDF Form" is checked.  Then click "Export".
+  
   ![Export PDF Dialog](images/export-pdf-dialog.png)
 4. Next it will display a file dialog to select where to save the output.  We will call our file "TSSU_APPLICATION_FORM.pdf"  (i.e. the same name we gave our spreadsheet, but with the `pdf` extension.
 5. Copy the *TSSU_APPLICATION_FORM.pdf* file into the Xataface application's `fdf_templates` directory (For more information on this folder, see the [Readme](../README.md).
