@@ -40,11 +40,11 @@ We're going to turn this into a PDF form using Open Office (since AFAIK Excel do
 
 In order to add form fields to the spreadsheet, we will open it in Open Office.  Once it is opened in Open Office, you should enable the "Form Controls" toolbar by selecting *View* > *Toolbars* > *Form Controls* from the top menu, to ensure that it is checked.
 
-!(Open Office Form Controls Menu)[images/oo-form-controls-menu.png]
+![Open Office Form Controls Menu](images/oo-form-controls-menu.png)
 
 Once it is selected, you should see a floating toolbar like:
 
-!(Form Controls Toolbar)(images/oo-form-controls-toolbar.png)
+![Form Controls Toolbar](images/oo-form-controls-toolbar.png)
 
 Make sure that design mode is on by pressing the "Design Mode on/off" toggle button ![Design mode toggle](images/design-mode-btn.png).
 
