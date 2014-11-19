@@ -22,4 +22,4 @@ The existing application is built with Xataface.  The relevant portion of the da
 
 The EER for this portion looks like:
 
-![Appoinments EER diagram](images/appointments-eer.svg)
+![Appoinments EER diagram](images/appointments-eer.png)
