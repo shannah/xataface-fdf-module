@@ -12,6 +12,10 @@
 8. [FDF Report GET Parameters](#get-parameters)
 9. [Adding Reports to the UI](#adding-reports-to-ui)
    1. [Example Adding Custom Action](#example-adding-custom-action)
+10. [Tutorial: Creating PDF Forms with Open Office and Xataface](docs/OpenOfficePDFFormTutorial.md)
+11. [Credits](#credits)
+12. [Support](#support)
+13. [See Also](#see-also)
 
 ##Synopsis
 
@@ -221,6 +225,10 @@ Here is an example of a custom action that is set up to appear along with the re
 ~~~
 
 The use of `$record->getURL()` allows us to generate the appropriate URL for the current record, rather than making the action go to the same record every time.  You could also achieve similar using the `$app->url()` method.
+
+##Tutorial: Creating PDF Forms with Open Office and Xataface
+
+[This tutorial](docs/OpenOfficePDFFormTutorial.md) shows you how to use open office to create a PDF form that can be used in Xataface to generate PDF reports.
 
 ##Credits
 
