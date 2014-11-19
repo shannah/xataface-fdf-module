@@ -4,9 +4,9 @@ This tutorial describes how to create a PDF forms using Open Office, then have t
 
 ##Requirements
 
-1. Open Office.  (I'm using version 4.1.1, but you should be able to use older versions also).
-2. An application built with Xataface 2.0 or higher.
-3. The application should have the Xataface FDF module installed.
+1. [Open Office](https://www.openoffice.org/).  (I'm using version 4.1.1, but you should be able to use older versions also).
+2. An application built with [Xataface](http://xataface.com) 2.0 or higher.
+3. The application should have the [Xataface FDF module](https://github.com/shannah/xataface-fdf-module) installed.
 
 ##Overview
 
